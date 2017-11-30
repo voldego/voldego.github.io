@@ -1,7 +1,446 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>landing</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i|Rubik:400,400i,500,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ourcompany" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Our Company
+                        <i class="ion-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Powerful Network</a>
+                        <a class="dropdown-item" href="#">Industry Sector Expertise</a>
+                        <a class="dropdown-item" href="#">Business Ethics</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ourcompany" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        en
+                        <i class="ion-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="flag-container">
+                        <a class="dropdown-item" href="#"><img class="flag" src="./img/united-states.png" alt=""><span>EN</span> </a>
+                        <a class="dropdown-item" href="#"><img class="flag" src="./img/france.png" alt=""><span>FR</span></a>
+                        <a class="dropdown-item" href="#"><img class="flag" src="./img/netherlands.png" alt=""><span>NL</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Slider section -->
+    <section id="r-slider">
+        <div class="overlay"></div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./img/all-bong-98724.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/charles-forerunner-378.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/christine-roy-343235.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <i class="ion-chevron-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+
+                <i class="ion-chevron-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Emerging Markets -->
+    <section id="r-emerge-title">
+        <div class="container">
+            <div class="row">
+                <h1>Emerging Markets</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emerging Markets Villes -->
+    <section id="r-emerge-content">
+        <div class="card-columns">
+            <div class="card">
+                <img class="card-img-top" src="./img/mbr-1-1620x1080.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">CHINA</h4>
+                    <p class="card-text">China's economic growth rate in 2011 was 10.7%. China has contributed more than any other country to global economic growth since 2003 ...</p>
+                    <div class="btnn"><a href="#" class="btn learnmore">Learn More</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./img/bangkit-ristant-347771.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">RUSSIA</h4>
+                    <p class="card-text">The European Union and the Russian Federation have a solid trade relationship, which has become stronger following EU enlargement ...</p>
+                    <div class="btnn"><a href="#" class="btn learnmore">Learn More</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./img/kees-kortmulder-119965.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">MOROCCO</h4>
+                    <p class="card-text">EU-Morocco trade is rapidly assuming new dimensions. Between 1993 and 2013, trade volumes grew by over 80%, with EU imports from Morocco nearly doubling ...</p>
+                    <div class="btnn"><a href="#" class="btn learnmore">Learn More</a></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="./img/martin-jernberg-274716.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">INDIA</h4>
+                    <p class="card-text">EU-India trade has grown impressively over the years, from €4.4 billion in 1980 to €40 billion in 2013. Trade with the EU represents more than ...</p>
+                    <div class="btnn"><a href="#" class="btn learnmore">Learn More</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./img/Joburg_skyline2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">SOUTH AFRICA</h4>
+                    <p class="card-text">The EU remains South Africa's most important economic trade partner. South Africa is a member of the ACP Group of countries. It is a signatory to the EU-ACP ...</p>
+                    <div class="btnn"><a href="#" class="btn learnmore">Learn More</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./img/robert-nyman-442994.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">BRAZIL</h4>
+                    <p class="card-text">Brazil is an important trading partner for the EU. The backbone of future bilateral trade relations will be the EU-Mercosur Association Agreement ...</p>
+                    <div class="btnn"><a href="#" class="btn learnmore">Learn More</a></div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Emerging Markets Villes -->
+    <section id="r-parallax1"></section>
+
+    <!-- Mergers & Acquisitions -->
+    <section id="r-merger-title">
+        <div class="container">
+            <div class="row">
+                <h1>Mergers & Acquisitions</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mergers & Acquisitions -->
+    <section id="r-merger-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="./img/futurisitc-building-design_4460x4460.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h2>We Help You To Grow</h2>
+                    <p>odschinson ‘s partners offers unsurpassed advice to both the seller and buyer in Acquisition transactions. We boast unparalleled breadth and depth for an Acquisition franchise.The global Acquisition capabilities of our partners allow
+                        our clients to go beyond their domestic borders to meet their strategic and financial goals.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Expertise</h2>
+                    <p>Acquisition and divestiture activities remain vital strategic alternatives as companies across all sectors strive to maximize shareholder value. We combine the extensive resources of a global firm with the client-level focus of a boutique
+                        firm to provide advice across a variety of Acquisition services.</p>
+                    <p>With partner offices in the Americas, Europe, Asia, Africa and the Middle East, our strong international presence enables us to draw on our firm-wide resources to ensure a successful transaction for each of our clients worldwide.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./img/earth-in-hands_925x.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="./img/helloquence-51716.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h6>Buyer Representation</h6>
+                            <div class="btnn"><a class="btn learnmore" href="#">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="./img/photo-1491336477066-31156b5e4f35.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h6>Seller Representation</h6>
+                            <div class="btnn"><a class="btn learnmore" href="#">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="./img/budget-and-finance-tracking_925x.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h6>Valuation Services</h6>
+                            <div class="btnn"><a class="btn learnmore" href="#">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="r-parallax2"></section>
+    <!-- Mergers & Acquisitions -->
+    <section id="r-estate-title">
+        <div class="container">
+            <div class="row">
+                <h1>Real Estate</h1>
+                <p>Rodschinson’s partners are trendsetters in property acquisitions and corporate facility management services.</p>
+            </div>
+        </div>
+    </section>
+    <section id="r-estate-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="./img/futurisitc-building-design_4460x4460.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Highest Standards</h2>
+                    <p>Wherever our partners are located in the Americas, Europe, the Middle East, Africa and Asia, we can deliver a consistent and comprehensive range of fully integrated services to our clients. These complementary services allow us to
+                        develop and implement real estate strategies that meet increasingly complex business and financial requirements.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Our Global Client Services support clients who require multiple services, who are seeking coverage multiple regions, or who need help determining which services will best serve their real estate objectives. We also ensure that our
+                        operations worldwide operate and interact at the consistently high levels our clients have come to expect.</p>
+                    <p>Whether you require one real estate service in a single location or broader regional or global support, we have the partners, resources and systems in place to deliver effective solutions with consistently high levels of service and
+                        skill.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./img/earth-in-hands_925x.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="./img/sean-pollock-203658.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h6>Global Corporate</h6>
+                            <div class="btnn"><a class="btn learnmore" href="#">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="./img/blake-wheeler-233622.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h6>Real Estate Investment</h6>
+                            <div class="btnn"><a class="btn learnmore" href="#">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="./img/nik-lanus-41808.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h6>Hotels</h6>
+                            <div class="btnn"><a class="btn learnmore" href="#">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="r-parallax3"></section>
+    <!-- Mergers & Acquisitions -->
+    <section id="r-trade-title">
+        <div class="container">
+            <div class="row">
+                <h1>Global Trade Solutions</h1>
+                <p>Rodschinson provides unrivalled global brokerage services for our customers and trading services in commodities, consumer goods and industrial products for our private investors around the world.</p>
+            </div>
+        </div>
+    </section>
+    <section id="r-trade-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="./img/olu-eletu-38649.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h2>We Boost Your Business</h2>
+                    <p>We provide one of the leading trading services to companies willing to boost their business by exporting or importing products globally.</p>
+                    <p>Our International presence, especially in Emerging Economies, give us the opportunity for immediate action. Our bright and experienced international business professionals, with truly extensive knowledge of local business practice
+                        and cultural codes, will assist you at every step of your business process.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>The complimentarity of our widespread network of talented traders and brokers, with administrative and production sites worldwide, allows us to cover all aspects of trade.</p>
+                    <p>Rodschinson assure an outstanding business development of small, mid-sized and large suppliers, manufacturers, wholesalers, global retail distribution and trade companies by providing a panel of services through partnership, joint-venture,
+                        technology transfer, office set-up or subsidiaries and one-shot clients.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./img/whole-world-in-her-hands_4460x4460.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="row">
+                <h5 style="width:100%;text-align:center"><b>If you would like to Buy or Sale a product, we can help you with one or all of the following steps : </b> </h5>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="./img/helloquence-51716.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h6>Sourcing your Product</h6>
+                            <div class="btnn"><a class="btn learnmore" href="#">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="./img/g-crescoli-364214.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h6>Risks & Opportunities</h6>
+                            <div class="btnn"><a class="btn learnmore" href="#">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="./img/rawpixel-com-351765.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h6>Negotiation & Office Setup</h6>
+                            <div class="btnn"><a class="btn learnmore" href="#">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="./img/budget-and-finance-tracking_925x.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h6>Surveys & Informations</h6>
+                            <div class="btnn"><a class="btn learnmore" href="#">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="./img/igor-ovsyannykov-151127.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h6>Logistics Solutions</h6>
+                            <div class="btnn"><a class="btn learnmore" href="#">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="./img/joao-silas-72563.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h6>Product Expertise</h6>
+                            <div class="btnn"><a class="btn learnmore" href="#">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="r-contact">
+        <div class="container">
+            <h1>Ask us a Question</h1>
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-lg-8 mr-auto ml-auto">
+                        <form>
+                            <div class="row">
+                                <div class="col-12 col-md">
+                                    <label>First Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-12 col-md mt-4 mt-md-0">
+                                    <label>Last Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col">
+                                    <label>Your Email</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col">
+                                    <label>Subject (optional but helpful)</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col">
+                                    <label>How can we help?</label>
+                                    <textarea class="form-control" name="message" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mt-4 text-center">
+                                <div class="col">
+                                    <button type="submit" class="btn">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <h5>© 2017 Rodschinson. All Rights Reserved</h5>
+        </div>
+    </footer>
+
 </body>
+
 </html>
