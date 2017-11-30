@@ -1,5 +1,6 @@
-html {
-    font-family: 'Rubik', sans-serif;
+html,
+body {
+    font-family: 'Rubik', sans-serif!important;
 }
 
 // NAVBAR
@@ -272,4 +273,40 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 30px;
+}
+
+.carousel-caption {
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+p {
+    color: grey;
+}
+
+.slider-text {
+    img {
+        opacity: 0.8;
+    }
+    h1 {
+        font-size: 4.75rem;
+    }
+    p {
+        font-size: 18px;
+        color: white;
+    }
+    .btn {
+        background-color: #149dcc;
+        color: white;
+        padding: 8px 48px;
+        border-radius: 100px;
+        font-weight: 700;
+        margin-top: 12px;
+        &:hover {
+            box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+    }
 }
