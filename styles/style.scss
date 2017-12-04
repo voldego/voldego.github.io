@@ -72,13 +72,14 @@ body {
 }
 
 //emerging title
-#r-emerge-title {
+#r-emerge-title,
+#r-about-title,
+#r-offices-title {
     .row {
         text-align: center;
         h1 {
             width: 100%;
-            padding-bottom: 100px;
-            padding-top: 100px;
+            padding-top: 50px;
         }
     }
 }
@@ -142,22 +143,33 @@ body {
         text-align: center;
         h1 {
             width: 100%;
-            padding-bottom: 50px;
             padding-top: 50px;
         }
+    }
+}
+
+#r-about-content {
+    .col {
+        text-align: center;
+    }
+    img {
+        max-width: 700px;
     }
 }
 
 //r-merger-content
 #r-merger-content,
 #r-estate-content,
-#r-trade-content {
-    margin-bottom: 120px;
+#r-trade-content,
+#r-services-content,
+#r-about-content,
+#r-offices-content,
+#r-affiliates-content {
+    padding-bottom: 40px;
     .container {
         .row {
-            align-items: center;
-            margin-top: 60px;
-            margin-bottom: 60px;
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
     }
     p {
@@ -168,6 +180,12 @@ body {
     }
     .card {
         position: relative;
+        address {
+            text-align: left;
+            margin-bottom: 0px;
+            margin-top: 16px;
+            font-size: 12px;
+        }
         &:hover {
             .overlay {
                 opacity: 0.3;
@@ -208,6 +226,15 @@ body {
     }
 }
 
+#r-services-content {
+    .row {
+        margin-bottom: 100px!important;
+        h5 {
+            color: #4c4c4c;
+        }
+    }
+}
+
 #r-parallax2 {
     background-image: url("../img/greg-becker-19268.jpg");
     height: 250px;
@@ -224,7 +251,6 @@ body {
         text-align: center;
         h1 {
             width: 100%;
-            padding-bottom: 10px;
             padding-top: 50px;
         }
         p {
@@ -252,6 +278,20 @@ body {
             box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
             cursor: pointer;
         }
+    }
+}
+
+.btn {
+    background-color: #149dcc;
+    color: white;
+    padding: 8px 48px;
+    border-radius: 100px;
+    font-weight: 700;
+    margin-top: 12px;
+    &:hover {
+        box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        color: white;
     }
 }
 
@@ -308,5 +348,328 @@ p {
             box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
             cursor: pointer;
         }
+    }
+}
+
+header,
+footer,
+section {
+    overflow: auto;
+}
+
+#r-offices-content,
+#r-affiliates-content {
+    .row {
+        justify-content: center;
+        text-align: left;
+        padding-top: 50px;
+        &.affiliates {
+            text-align: center;
+            img {
+                max-width: 218px;
+            }
+        }
+        .nav-tabs {
+            border-bottom: none;
+            .nav-link {
+                border-color: none;
+                border: none;
+                &.active {
+                    border-color: none;
+                    background-color: #149dcc;
+                    color: white;
+                    border-radius: 50px;
+                    padding: 8px 20px;
+                }
+                &:hover {
+                    border-color: none
+                }
+            }
+        }
+        .card {
+            border: none;
+            .card-body {
+                text-align: left;
+                padding-left: 6px;
+                padding-right: 6px;
+            }
+        }
+    }
+}
+
+#r-offices-content {
+    .row {
+        padding-top: 0px;
+    }
+}
+
+#r-offices-title {
+    padding-bottom: 20px;
+}
+
+#r-affiliates-content,
+#r-emerge-title,
+#r-about-title,
+#r-about-content {
+    background-color: whitesmoke;
+}
+
+@media (max-width: 992px) {
+    .navbar-light .navbar-toggler {
+        border-color: rgba(0, 0, 0, 0);
+    }
+    #r-slider {
+        .carousel-inner {
+            height: auto;
+        }
+        .slider-text {
+            h1 {
+                font-size: 45px;
+            }
+            p,
+            .btn {
+                font-size: 16px;
+            }
+        }
+    }
+    #r-services-content {
+        padding-bottom: 0px;
+        .row {
+            margin-bottom: 0px!important;
+            border-bottom: 1px solid #dadada;
+            .col-lg-6 {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+    }
+    h1 {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 27px;
+    }
+    h5 {
+        font-size: 19px;
+    }
+    p,
+    .btnn {
+        font-size: 16px;
+    }
+    .affiliates img {
+        width: 180px!important;
+    }
+    #r-affiliates-content {
+        .row {
+            padding-top: 0px;
+            .col-lg-3 {
+                padding-top: 20px;
+            }
+        }
+    }
+    #r-offices-content {
+        padding-bottom: 0px;
+        .row {
+            margin-bottom: 0px;
+            .nav-tabs {
+                .nav-link {
+                    font-size: 16px;
+                    &.active {
+                        font-size: 16px;
+                        padding: 8px 20px;
+                    }
+                }
+            }
+            .col-lg-4 {
+                margin-top: 10px;
+            }
+            address {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-light .navbar-toggler {
+        border-color: rgba(0, 0, 0, 0);
+    }
+    #r-slider {
+        .carousel-inner {
+            height: auto;
+        }
+        .slider-text {
+            h1 {
+                font-size: 40px;
+            }
+            p,
+            .btn {
+                font-size: 14px;
+            }
+        }
+    }
+    #r-services-content {
+        padding-bottom: 0px;
+        .row {
+            margin-bottom: 0px!important;
+            border-bottom: 1px solid #dadada;
+            .col-lg-6 {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    h5 {
+        font-size: 17px;
+    }
+    p,
+    .btnn {
+        font-size: 14px;
+    }
+    .affiliates img {
+        width: 180px!important;
+    }
+    #r-affiliates-content {
+        .row {
+            padding-top: 0px;
+            .col-lg-3 {
+                padding-top: 20px;
+            }
+        }
+    }
+    #r-offices-content {
+        padding-bottom: 0px;
+        .row {
+            margin-bottom: 0px;
+            .nav-tabs {
+                .nav-link {
+                    font-size: 14px;
+                    &.active {
+                        font-size: 14px;
+                        padding: 8px 12px;
+                    }
+                }
+            }
+            .col-lg-4 {
+                margin-top: 10px;
+            }
+            address {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar-brand {
+        img {
+            width: 150px;
+        }
+    }
+    .navbar-light .navbar-toggler {
+        border-color: rgba(0, 0, 0, 0);
+    }
+    #r-slider {
+        .carousel-caption {
+            top: 10%;
+        }
+        .carousel-inner {
+            height: auto;
+        }
+        .slider-text {
+            h1 {
+                font-size: 30px;
+            }
+            p,
+            .btn {
+                font-size: 12px;
+            }
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            top: 234px;
+            i {
+                font-size: 18px;
+            }
+        }
+    }
+    #r-emerge-title,
+    #r-about-title,
+    #r-offices-title,
+    #r-merger-title {
+        .row {
+            h1 {
+                font-size: 30px;
+                padding-top: 30px;
+            }
+        }
+    }
+    #r-contact h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+    h6 {
+        font-size: 13px;
+    }
+    p,
+    .btnn {
+        font-size: 12px;
+    }
+    .btnn {
+        margin-top: 0px;
+    }
+    #r-services-content {
+        padding-bottom: 0px;
+        .row {
+            margin-bottom: 0px!important;
+            border-bottom: 1px solid #dadada;
+            .col-lg-6 {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+    }
+    #r-offices-content {
+        padding-bottom: 0px;
+        .row {
+            margin-bottom: 0px;
+            .nav-tabs {
+                .nav-link {
+                    font-size: 12px;
+                    &.active {
+                        font-size: 12px;
+                        padding: 8px 12px;
+                    }
+                }
+            }
+            .col-lg-4 {
+                margin-top: 10px;
+            }
+            address {
+                font-size: 12px;
+            }
+        }
+    }
+    #r-affiliates-content {
+        .row {
+            padding-top: 0px;
+            .col-lg-3 {
+                padding-top: 20px;
+            }
+        }
+    }
+    .affiliates img {
+        max-width: 180px;
     }
 }
